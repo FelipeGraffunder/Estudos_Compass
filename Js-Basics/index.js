@@ -186,7 +186,7 @@ while (i < 10){
     console.log(i);
     i++;
 }
-*/
+
 
 //console.log(maior(2,3));
 function maior (num1,num2){
@@ -245,14 +245,15 @@ function countTruthy(array){
     }
     return i;
 }
-/*
+
+
 const movie = {
     name: 'a',
     year: 1888,
     director: 'b',
     rating: 4.5
 };
-*/
+
 
 //showStringProperties(movie);
 function showStringProperties (obj){
@@ -310,4 +311,78 @@ function isPrime(number){
 
     return true;
 }
+*/
+
+//--------------------
+//Objects
+
+/*
+//Factory function
+function createCircle (radius){
+    return {
+        radius,
+        draw(){
+            console.log('draw');
+        }
+    };
+}
+
+let circle1 = createCircle(2);
+console.log(circle1);
+*/
+
+/*
+//Constructor functions
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(2);
+console.log(circle);
+*/
+
+/*
+//adicionando uma propiedade em um objeto
+const circle = {
+    radius: 1
+};
+
+circle.draw = function(){}
+circle.color = 'red';
+delete circle.radius;
+
+console.log(circle);
+*/
+/*
+let circle = {
+    radius: 1
+};
+
+console.log('radius' in circle);
+*/
+/*
+//clonando um objeto
+
+let circle = {
+    radius: 1
+};
+
+const another = Object.assign({color:'red'},circle);
+console.log(another);
+
+const another2 = {...circle};
+console.log(another2);
+*/
+/*
+const message = 
+`Escrita ${3+2}
+sem quebra
+e funcional`;
+
+console.log(message);
+*/
+
 //--------------------
